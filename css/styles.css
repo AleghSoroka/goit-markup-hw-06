@@ -1177,6 +1177,9 @@ img {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -1279,6 +1282,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 72p;
   }
   .footer-form {
     display: flex;
@@ -1287,6 +1291,29 @@ img {
     align-items: center;
   }
   .footer-box {
-    margin: 0 auto;
+    margin: 0 auto 72px;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-box-title {
+    display: flex;
+    justify-content: center;
+  }
+  /* .footer-box-3 {
+   
+  } */
+}
+
+.footer-box {
+  border: 1px solid red;
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-wrapper {
+    .footer-wrapper {
+      display: flex;
+    }
   }
 }
