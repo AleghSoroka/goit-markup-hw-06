@@ -25,28 +25,31 @@
 
   <body class="body">
     <!-- Header -->
-    <header class="header-global section">
-      <div class="header-div container">
+    <header class="header-section">
+      <div class="header-global container">
         <nav class="header-nav nav">
           <!-- Upper LOGO -->
           <a class="header-logo logo link" href="./portfolio.html"
             >Web<span class="header-studio">Studio</span></a
           >
+
           <ul class="nav-list list">
-            <li>
-              <a class="site-navigation link" href="./index.html">Studio</a>
-            </li>
+            <li class="nav-list-item">
+              <a class="site-navigation link" href="./index.html"
+                >Studio</a
+              >
+            </li class="nav-list-item">
             <li>
               <a class="site-navigation current link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="site-navigation link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address>
+        <address class="header-adr">
           <ul class="contact-list list">
             <li class="contact-list-item">
               <a class="contact-link link" href="mailto:info@devstudio.com"
@@ -60,6 +63,17 @@
             </li>
           </ul>
         </address>
+        <!-- Sandwich button -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+        <!-- End of Sadwich button` -->
       </div>
     </header>
     <main>

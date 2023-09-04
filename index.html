@@ -26,25 +26,26 @@
 
   <body class="body">
     <!-- Заголовок -->
-    <header class="header-global section">
-      <div class="header-div container">
+    <header class="header-section">
+      <div class="header-global container">
         <nav class="header-nav nav">
           <!-- Upper LOGO -->
           <a class="header-logo logo link" href="./portfolio.html"
             >Web<span class="header-studio">Studio</span></a
           >
+
           <ul class="nav-list list">
-            <li>
+            <li class="nav-list-item">
               <a class="site-navigation current link" href="./index.html"
                 >Studio</a
               >
-            </li>
+            </li class="nav-list-item">
             <li>
               <a class="site-navigation link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="site-navigation link" href="">Contacts</a>
             </li>
           </ul>
@@ -63,14 +64,25 @@
             </li>
           </ul>
         </address>
+        <!-- Sandwich button -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+        <!-- End of Sadwich button` -->
       </div>
     </header>
 
     <!-- Тіло сайту -->
     <main>
       <!-- Section 1 - Hero image -->
-      <section class="hero-section">
-        <div class="hero-container">
+      <section class="hero-section section">
+        <div class="hero-container container">
           <h1 class="hero-caption">Effective Solutions for Your Business</h1>
           <button class="order-btn button" type="button" data-modal-open>
             Order Service
@@ -90,7 +102,7 @@
                   <use href="./images/icons.svg#icon-strategy"></use>
                 </svg>
               </div>
-              <h3 class="card-title leftalign">Strategy</h3>
+              <h3 class="card-title-leftalign">Strategy</h3>
               <p class="additional-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -102,7 +114,7 @@
                   <use href="./images/icons.svg#icon-punctuality"></use>
                 </svg>
               </div>
-              <h3 class="card-title leftalign">Punctuality</h3>
+              <h3 class="card-title-leftalign">Punctuality</h3>
               <p class="additional-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -114,7 +126,7 @@
                   <use href="./images/icons.svg#icon-diligence"></use>
                 </svg>
               </div>
-              <h3 class="card-title leftalign">Diligence</h3>
+              <h3 class="card-title-leftalign">Diligence</h3>
               <p class="additional-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -126,7 +138,7 @@
                   <use href="./images/icons.svg#icon-technologies"></use>
                 </svg>
               </div>
-              <h3 class="card-title leftalign">Technologies</h3>
+              <h3 class="card-title-leftalign">Technologies</h3>
               <p class="additional-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -743,6 +755,100 @@
         <!-- End of Modal Form -->
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="modal-contact-list list">
+        <li class="modal-contact-list-item">
+          <a class="modal-phone-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="modal-contact-list-item">
+          <a class="modal-email-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="modal-socials-icon-box list">
+        <li class="socials-icon-element">
+          <a
+            href="https://instagram.com"
+            class="link socials-link"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-icon-element">
+          <a
+            href="https://twitter.com"
+            class="link socials-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-icon-element">
+          <a
+            href="https://facebook.com"
+            class="link socials-link"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-icon-element">
+          <a
+            href="https://linkedin.com"
+            class="link socials-link"
+            aria-label="Linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
