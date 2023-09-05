@@ -96,19 +96,78 @@ img {
   max-width: 1440px;
   padding-top: 112px;
   padding-bottom: 112px;
-
   /* padding: 188px 0; */
   background-color: var(--grey);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/Dark-bg_mob@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/Dark-bg_tab@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/Dark-bg_desk@1x.jpg);
+  }
+}
+/* For retina display: */
+@media only screen and (max-width: 767.98px) and ((min-device-pixel-ratio: 2) or
+  (min-resolution: 192dpi) or
+  (min-resolution: 2ppx)) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/Dark-bg_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and ((min-device-pixel-ratio: 2)or
+  (min-resolution: 192dpi) or
+  (min-resolution: 2ppx)) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/Dark-bg_tab@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) and ((min-device-pixel-ratio: 2) or  (min-resolution: 192dpi) or
+  (min-resolution: 2ppx)) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/Dark-bg_desk@2x.jpg);
+  }
+}
+/* ======================================= */
 .container {
   max-width: 320px;
   padding-left: 16px;
@@ -1321,7 +1380,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* column-gap: 24px; */
     row-gap: 72px;
+    justify-content: space-between;
   }
 }
