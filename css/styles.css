@@ -1308,12 +1308,20 @@ img {
 }
 
 .footer-box {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-box {
+    margin-right: 0;
+  }
+  .footer-box-1 {
+    min-width: 264px;
+  }
   .footer-wrapper {
-    .footer-wrapper {
-      display: flex;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* column-gap: 24px; */
+    row-gap: 72px;
   }
 }
