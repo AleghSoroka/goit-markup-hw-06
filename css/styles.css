@@ -356,6 +356,10 @@ img {
     font-weight: 500;
   }
 }
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
 
 /* ============================= */
 @media screen and (max-width: 767.98px) {
